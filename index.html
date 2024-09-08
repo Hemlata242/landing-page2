@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Landing Page</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(to bottom, #1505f7, #bbbbf3);
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            padding-top: 50px;
+            display: flex;
+            gap: 200px;
+        }
+
+        section {
+            background-color: #f7f7f7;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease-in-out;
+        }
+
+        section:hover {
+            background-color: #ffcc00;
+            color: #480fd9;
+        }
+
+        .hero {
+            background-image: linear-gradient(to bottom, #fdfd02, #fbfbf2);
+            background-size: 100% 300px;
+            background-position: 0% 100%;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .hero:hover {
+            background-position: 100% 100%;
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .feature {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="hero">
+                <h1>Marketing beyond eamil</h1>
+                <p>An affordable,easy plateform to send emails,grow your list and automate communication.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="features">
+                <div class="feature">
+                    <i class="fas fa-lock"></i>
+                    <h2>Secure</h2>
+                    <p>Email marketing</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-rocket"></i>
+                    <h2>Fast</h2>
+                    <p>Marketing Automation</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-cog"></i>
+                    <h2>Customizable</h2>
+                    <p>Ecommerce Marketing</p>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section id="contact">
+                <h1>Contact Us</h1>
+                <p>Enter your details</p>
+                <form>
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="Message"></textarea>
+                    <button>Send</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/002/297/065/small/abstract-blue-wave-background-free-vector.jpg" alt="" width="1600px" height="170px">
+    </footer>
+</body>
+</html>
